@@ -28,7 +28,6 @@ Data is stored in [JSON Lines (JSONL)](https://jsonlines.org/) format. Each line
 | `term` | String | The actual word or phrase. |
 | `term_type` | String | Type of the term (e.g., `word`, `phrase`). |
 | `count` | Integer | Frequency count of the term in the source technical documents. |
-| `pos_list` | Array[String] | List of Parts of Speech (e.g., `noun`, `verb`). |
 | `phonetics` | Array[String] | Phonetic transcriptions. |
 | `collocations` | Array[String] | Common collocations and related expressions. |
 | `daily` | Object | Meanings and examples for daily/general usage. |
@@ -41,7 +40,6 @@ Data is stored in [JSON Lines (JSONL)](https://jsonlines.org/) format. Each line
   "term": "ABAC",
   "term_type": "word",
   "count": 536,
-  "pos_list": ["noun"],
   "phonetics": [],
   "collocations": ["ABAC policy", "ABAC model", "ABAC system"],
   "daily": {},
@@ -106,7 +104,6 @@ with open('CloudWords.jsonl', 'r', encoding='utf-8') as f:
 | `term` | String | 具体的单词或短语。 |
 | `term_type` | String | 词条类型（例如 `word` 或 `phrase`）。 |
 | `count` | Integer | 该词条在源技术文档中出现的频率统计。 |
-| `pos_list` | Array[String] | 词性列表（例如 `noun` 名词, `verb` 动词）。 |
 | `phonetics` | Array[String] | 音标。 |
 | `collocations` | Array[String] | 常见的词语搭配及相关表达。 |
 | `daily` | Object | 在日常/通用语境下的释义和例句。 |
@@ -119,7 +116,6 @@ with open('CloudWords.jsonl', 'r', encoding='utf-8') as f:
   "term": "ABAC",
   "term_type": "word",
   "count": 536,
-  "pos_list": ["noun"],
   "phonetics": [],
   "collocations": ["ABAC policy", "ABAC model", "ABAC system"],
   "daily": {},
